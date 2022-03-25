@@ -1,0 +1,174 @@
+@import 'variables';
+
+.container {
+  //   margin: 16rem 8rem 20rem;
+  margin: 16rem 0;
+  //   background-color: pink;
+}
+
+.title {
+  //   position: relative;
+  margin: 0 0 4rem;
+  font-size: 3.6rem;
+  font-family: $outfit;
+  font-weight: bold;
+  text-align: center;
+  //   &::before {
+  //     position: absolute;
+  //     bottom: -4rem;
+  //     left: calc(50% - 2rem);
+  //     content: '';
+  //     width: 4rem;
+  //     height: 1px;
+  //     background-color: $key;
+  //   }
+}
+.bgEn {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  //   height: 0.85rem;
+  // height: 0.75rem;
+  //   height: 1.5rem;
+  overflow: hidden;
+  background-color: $key;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+  &:nth-of-type(1) {
+    height: 1.2rem;
+    transform: rotate(0.25deg);
+    .bgEnText {
+      font-size: 1rem;
+    }
+  }
+  &:nth-of-type(2) {
+    height: 1.9rem;
+    .bgEnText {
+      font-size: 1.8rem;
+    }
+  }
+  .bgEnText {
+    align-items: center;
+    &:nth-of-type(1) {
+      //   background-color: red;
+      animation: textScroll1 140s linear infinite;
+      @keyframes textScroll1 {
+        0% {
+          transform: translateX(100%);
+          //   transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+          //   transform: translateX(-100%);
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      //   background-color: blue;
+      animation: textScroll2 140s -70s linear infinite;
+      @keyframes textScroll2 {
+        0% {
+          transform: translateX(0%);
+          //   transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-200%);
+          //   transform: translateX(-100%);
+        }
+      }
+    }
+  }
+  &:nth-of-type(2) {
+    margin: 0.25rem 0 0;
+    transform: rotate(-1.5deg);
+    transform-origin: 65rem;
+    .bgEnText {
+      // align-items: flex-start;
+      &:nth-of-type(1) {
+        //   background-color: red;
+        animation: textScroll3 60s linear infinite;
+        @keyframes textScroll3 {
+          0% {
+            transform: translateX(100%);
+            //   transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+            //   transform: translateX(-100%);
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        //   background-color: blue;
+        animation: textScroll4 60s -30s linear infinite;
+        @keyframes textScroll4 {
+          0% {
+            transform: translateX(0%);
+            //   transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-200%);
+            //   transform: translateX(-100%);
+          }
+        }
+      }
+    }
+  }
+  //
+  //   &:nth-of-type(1) {
+  //     .bgEnText {
+  //       animation: textScroll1 0.75s linear infinite;
+  //       @keyframes textScroll1 {
+  //         0% {
+  //           transform: translateY(100%);
+  //           //   transform: translateX(100%);
+  //         }
+  //         100% {
+  //           transform: translateY(-100%);
+  //           //   transform: translateX(-100%);
+  //         }
+  //       }
+  //     }
+  //   }
+  //   &:nth-of-type(2) {
+  //     background-color: unset;
+  //     .bgEnText {
+  //       color: $key;
+  //       animation: textScroll2 1.25s 0.5s linear infinite;
+  //       @keyframes textScroll2 {
+  //         0% {
+  //           transform: translateY(100%);
+  //         }
+  //         100% {
+  //           transform: translateY(-100%);
+  //         }
+  //       }
+  //     }
+  //   }
+  //   &:nth-of-type(3) {
+  //     .bgEnText {
+  //       animation: textScroll3 0.5s 0.25s linear infinite;
+  //       @keyframes textScroll3 {
+  //         0% {
+  //           transform: translateY(100%);
+  //         }
+  //         100% {
+  //           transform: translateY(-100%);
+  //         }
+  //       }
+  //     }
+  //   }
+}
+.bgEnText {
+  //   width: 100%;
+  //   width: auto;
+  height: 100%;
+  //   line-height: 1;
+  line-height: 0.75;
+  display: inline-flex;
+  // align-items: center;
+  // align-items: flex-end;
+  color: $white;
+  font-size: 2rem;
+  white-space: nowrap;
+}

@@ -1,0 +1,139 @@
+@import 'variables';
+
+.container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: $white;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 0;
+}
+
+.logo {
+  display: inline-block;
+  padding: 1.5rem;
+}
+.logoSvg {
+  width: 16rem;
+}
+
+.button {
+  display: none;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $key;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $key;
+  }
+}
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navLink {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+//
+//
+//
+//
+//
+@media screen and (max-width: $sp) {
+  .container {
+    height: 8rem;
+  }
+  .inner {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: $key;
+    }
+  }
+
+  .logo {
+    padding: 2.5rem;
+  }
+  .logoSvg {
+    width: 10rem;
+  }
+
+  .button {
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    // background-color: pink;
+  }
+  .buttonBorder {
+    width: 100%;
+    height: 1px;
+    margin: 0.5rem;
+    background-color: $key;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // display: flex;
+    // align-items: center;
+    height: 100vh;
+    margin: 8rem 0 0;
+    padding: 4rem 0 0;
+    background-color: $white;
+    visibility: hidden;
+    opacity: 0;
+    &::before {
+      content: none;
+    }
+    &::after {
+      content: none;
+    }
+  }
+  .navList {
+    flex-direction: column;
+  }
+  .navLink {
+    display: block;
+    padding: 1.5rem 4rem;
+  }
+}

@@ -1,0 +1,60 @@
+@import 'variables';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  //   margin: 0 8rem 12rem;
+  margin: 0 16rem 12rem;
+  //   background-color: pink;
+}
+
+.info {
+  //   position: relative;
+  //   background-color: red;
+  position: -webkit-sticky;
+  position: sticky;
+  //   bottom: 8rem;
+  bottom: 12rem;
+  align-self: flex-end;
+  //   width: 40rem;
+  width: 36rem;
+  //   width: 300px;
+}
+.infoHead {
+  margin: 0 0 1.5rem;
+}
+.infoHeadTime {
+  margin: 0 2rem 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.infoHeadCategory {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.infoTitle {
+  margin: 0 0 2rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.infoEditor {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.content {
+  //   width: 96rem;
+  width: 84rem;
+}
+.contentImg {
+  margin: 0 0 5rem;
+}
+.contentMain {
+  font-size: 1.6rem;
+  line-height: 2.2;
+  p {
+    margin: 0 0 2.5rem;
+  }
+}

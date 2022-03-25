@@ -1,0 +1,93 @@
+@import 'variables';
+
+.container {
+  margin: 0 16rem 12rem;
+}
+.inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  //   background-color: pink;
+}
+
+.img {
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  //   margin: 0 10rem 0 0;
+  padding: 10rem 0;
+  //   background-color: red;
+}
+.svg {
+  width: 39.9rem;
+  height: 9.8rem;
+}
+
+.content {
+  width: 72rem;
+}
+.contentMainTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 3rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  &::after {
+    content: '';
+    flex: auto;
+    display: inline-block;
+    // width: 6rem;
+    height: 1px;
+    margin: 0 0 0 2rem;
+    background-color: $key;
+  }
+}
+.contentMainTitleEn {
+  margin: 0 1rem 0 0;
+  font-size: 3.6rem;
+  font-family: $outfit;
+}
+.contentMain {
+  position: relative;
+  margin: 0 0 4rem;
+  padding: 0 0 2.5rem;
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    content: '';
+    width: 8rem;
+    height: 1px;
+    background-color: $key;
+  }
+}
+.contentMainText {
+  margin: 0 0 1.5rem 1rem;
+  font-size: 1.6rem;
+  line-height: 2.2;
+}
+
+.contentSns {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 1rem;
+}
+.contentSnsTitle {
+  margin: 0 2rem 0 0;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: $outfit;
+}
+.contentSnsList {
+  display: flex;
+  flex-direction: row;
+}
+.contentSnsItem {
+  margin: 0 1rem 0 0;
+}
+.contentSnsLink {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: $outfit;
+}
